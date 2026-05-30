@@ -1,0 +1,113 @@
+/* Import Tailwind v4 Engine Natively */
+@import "tailwindcss";
+
+:root {
+  scroll-behavior: smooth;
+  /* ... keep all your other existing variables and rules below ... */
+  --text: #9ca3af;                  
+  --text-h: #ffffff;                
+  --bg: #0d0b14;                    /* Deep dark background */
+  --border: #221d33;                
+  --code-bg: #1a1626;
+  --accent: #ec4899;                
+  --accent-secondary: #a855f7;      
+  --accent-bg: rgba(236, 72, 153, 0.1);
+  --accent-border: rgba(236, 72, 153, 0.4);
+  --social-bg: rgba(255, 255, 255, 0.05);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Playfair Display', Georgia, serif; 
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+#root {
+  width: 100%;
+  max-width: 1280px; 
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--sans); 
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.font-serif {
+  font-family: var(--heading) !important;
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+/* ================= CUSTOM FLOATING ANIMATIONS ================= */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float-1 {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-medium 5s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-delayed 4.5s ease-in-out infinite 0.5s;
+}
