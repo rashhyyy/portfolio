@@ -41,34 +41,54 @@ export default function Education() {
         </div>
 
         {/* Major Degree Info Card Asset Box */}
-        {/* Enhanced with unified deep translucent borders, blur, and high-contrast ambient glow drop shadows */}
         <div className="bg-[#131124]/40 border border-purple-500/20 rounded-3xl p-6 md:p-8 backdrop-blur-md relative transition-all duration-300 ease-out transform hover:-translate-y-1 hover:border-pink-500/40 hover:shadow-[0_15px_40px_rgba(236,72,153,0.1)] shadow-[0_0_50px_-15px_rgba(168,85,247,0.15)] group">
           
           {/* Degree Header Row */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
             <div>
               <h3 className="text-xl md:text-2xl font-bold text-white tracking-wide font-serif group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-pink-200 transition-all duration-300">
-                Bachelor of Software Engineering (Honours)
+                Bachelor of Software Engineering (Hons)
               </h3>
-              <p className="text-sm font-semibold text-[#f43f5e] tracking-wide mt-1">
-                Open University of Sri Lanka <span className="text-gray-600 mx-2">•</span> <span className="text-gray-400 font-normal">2023 - Present</span>
+              <p className="text-sm font-semibold text-[#f43f5e] tracking-wide mt-1 flex items-center gap-1">
+                Open University of Sri Lanka <span className="text-pink-400">🎓</span>
               </p>
             </div>
             
-            {/* Year Status Pill Badge */}
-            <span className="self-start sm:self-center px-4 py-1 bg-[#251327] border border-pink-500/30 text-[#f43f5e] text-xs font-bold rounded-full tracking-wide shadow-[0_0_15px_rgba(244,63,94,0.1)]">
-              Third Year
+            {/* Year Status Pill Badge from image_9732cb.png */}
+            <span className="self-start sm:self-center px-3 py-1 bg-emerald-950/20 border border-emerald-500/30 text-emerald-400 text-xs font-semibold rounded-md tracking-wide flex items-center gap-1 shadow-[0_0_15px_rgba(16,185,129,0.05)]">
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+              In Progress
             </span>
           </div>
 
-          {/* Core Curriculum Description Summary */}
+          {/* Context Meta Pills Sub-row from image_9732cb.png */}
+          <div className="flex flex-wrap gap-2 mb-4 text-xs font-medium text-gray-400">
+            <span className="px-3 py-1.5 bg-[#17142b]/60 border border-purple-500/10 rounded-lg flex items-center gap-1.5">
+              <span className="text-pink-400 text-sm leading-none">📅</span> Currently in Third Year
+            </span>
+            <span className="px-3 py-1.5 bg-[#17142b]/60 border border-purple-500/10 rounded-lg flex items-center gap-1.5">
+              <span className="text-purple-400 text-sm leading-none">📍</span> Sri Lanka <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider">lk</span>
+            </span>
+          </div>
+
+          {/* Core Curriculum Description Summary with accurate styled highlights to match image_9732cb.png */}
           <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-6 max-w-3xl">
-            Currently pursuing a comprehensive software engineering degree covering software design patterns, database 
-            systems, web and mobile application development, software quality assurance, and project management.
+            Pursuing a comprehensive education in software engineering with focus on <span className="text-pink-400 font-semibold">full-stack development</span>, <span className="text-purple-400 font-semibold">software architecture</span>, <span className="text-pink-400 font-semibold">database systems</span>, and modern development methodologies. 💻 ✨
           </p>
 
-          {/* Academic Milestone Tag Highlights Row */}
-          
+          {/* Academic Milestone Tag Highlights Row from image_9732cb.png */}
+          <div className="flex flex-wrap gap-2">
+            {['Software Engineering', 'Full-Stack Development', 'Database Systems', 'UI/UX Design'].map((tag) => (
+              <span 
+                key={tag} 
+                className="px-4 py-1.5 bg-[#16122c]/60 border border-purple-500/20 text-gray-300 text-xs font-medium rounded-full hover:border-pink-500/30 hover:text-white transition-colors duration-300"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
 
         </div>
 

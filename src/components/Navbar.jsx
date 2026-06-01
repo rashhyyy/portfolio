@@ -19,10 +19,13 @@ export default function Navbar() {
         <a href="#contact" className="hover:text-pink-400 transition">Contact</a>
       </div>
 
-      {/* Action Button */}
-      <button className="px-5 py-2 text-sm font-semibold text-white bg-gradient-to-r from-pink-500 to-purple-500 rounded-full hover:opacity-90 transition shadow-lg shadow-pink-500/20">
+      {/* Action Button - Updated with a highlighted bright/light pink gradient theme */}
+      <a 
+        href="#contact" 
+        className="px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-pink-400 to-pink-500 rounded-full hover:from-pink-500 hover:to-pink-600 transition-all shadow-lg shadow-pink-500/20 inline-block text-center cursor-pointer"
+      >
         Hire Me
-      </button>
+      </a>
     </nav>
   );
 }

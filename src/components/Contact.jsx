@@ -74,7 +74,7 @@ export default function Contact() {
       {/* Two Column Layout Block Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto w-full text-left items-start relative z-10">
         
-        {/* Left Column: Interactive Input Message Form Field Container (7 Columns wide on large screens) */}
+        {/* Left Column: Input Form Fields Block Container */}
         <form className="lg:col-span-7 space-y-5 w-full" onSubmit={handleSubmit}>
           <div className="space-y-2">
             <label className="text-xs font-bold uppercase tracking-wider text-gray-400">Name</label>
@@ -111,13 +111,11 @@ export default function Contact() {
               placeholder="Tell me about your opportunity..." 
               className="w-full px-4 py-3.5 bg-[#131124]/50 border border-purple-500/10 rounded-xl text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-pink-500/40 focus:shadow-[0_0_25px_rgba(168,85,247,0.15)] backdrop-blur-md transition-all duration-300 resize-none"
             />
-            {/* Character Counter Element at the bottom right */}
             <span className="absolute bottom-3 right-4 text-[11px] text-gray-600 font-mono">
               {message.length}/500
             </span>
           </div>
 
-          {/* Solid Gradient Submission Action Trigger Button with Hover/Pulse Animation Effects */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <button 
               type="submit" 
@@ -136,70 +134,119 @@ export default function Contact() {
           </div>
         </form>
 
-        {/* Right Column: Platform Social Anchor Links (5 Columns wide on large screens) */}
-        <div className="lg:col-span-5 space-y-6 w-full lg:pt-7">
-          <h3 className="text-xl font-bold text-white tracking-wide mb-2">
-            Connect with me
-          </h3>
+        {/* Right Column: Dynamic Info Stacks (Image 2 -> Image 3 Layout -> Image 1 Layout) */}
+        <div className="lg:col-span-5 space-y-6 w-full lg:pt-2">
+          
+          {/* ================= IMAGE 2 METRICS: CONTACT INFORMATION CONTAINER ================= */}
+          <div className="bg-[#131124]/40 border border-purple-500/10 rounded-3xl p-6 backdrop-blur-md shadow-[0_0_40px_-20px_rgba(168,85,247,0.15)] space-y-4">
+            <h3 className="text-xl font-bold text-white tracking-wide flex items-center gap-2 font-sans">
+              Contact Information <span className="text-[#f43f5e] text-sm">✨</span>
+            </h3>
 
-          <div className="space-y-3 w-full">
-            
-            {/* GitHub Card */}
-            <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noreferrer"
-              className="flex items-center justify-between p-4 bg-[#131124]/40 border border-purple-500/10 rounded-2xl backdrop-blur-md group hover:border-pink-500/40 hover:shadow-[0_10px_30px_rgba(168,85,247,0.08)] shadow-[0_0_40px_-20px_rgba(168,85,247,0.15)] transition-all duration-300 ease-out transform hover:-translate-y-1"
-            >
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 bg-[#1d1225] rounded-xl border border-pink-500/10 flex items-center justify-center text-[#f43f5e] group-hover:border-pink-500/30 group-hover:shadow-[0_0_15px_rgba(244,63,94,0.2)] transition-all duration-300">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            <div className="space-y-3">
+              {/* Email Slot */}
+              <div className="flex items-center gap-4 p-3.5 bg-[#17142b]/50 border border-purple-500/5 rounded-2xl">
+                <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-500 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L22 8m-9+6h.01M21 16v-8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2z"/>
+                  </svg>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-white tracking-wide group-hover:text-pink-400 transition-colors duration-300">GitHub</h4>
-                  <p className="text-xs text-gray-500 mt-0.5">Explore my code</p>
+                  <p className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Email</p>
+                  <p className="text-sm font-semibold text-gray-200 mt-0.5 tracking-wide">rashminishadini2002@gmail.com</p>
                 </div>
               </div>
-              <span className="text-gray-600 group-hover:text-[#f43f5e] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 text-sm font-bold">↗</span>
-            </a>
 
-            {/* LinkedIn Card */}
-            <a 
-              href="https://linkedin.com" 
-              target="_blank" 
-              rel="noreferrer"
-              className="flex items-center justify-between p-4 bg-[#131124]/40 border border-purple-500/10 rounded-2xl backdrop-blur-md group hover:border-pink-500/40 hover:shadow-[0_10px_30px_rgba(168,85,247,0.08)] shadow-[0_0_40px_-20px_rgba(168,85,247,0.15)] transition-all duration-300 ease-out transform hover:-translate-y-1"
-            >
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 bg-[#1d1225] rounded-xl border border-pink-500/10 flex items-center justify-center text-[#f43f5e] group-hover:border-pink-500/30 group-hover:shadow-[0_0_15px_rgba(244,63,94,0.2)] transition-all duration-300">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              {/* Location Slot */}
+              <div className="flex items-center gap-4 p-3.5 bg-[#17142b]/50 border border-purple-500/5 rounded-2xl">
+                <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-white tracking-wide group-hover:text-pink-400 transition-colors duration-300">LinkedIn</h4>
-                  <p className="text-xs text-gray-500 mt-0.5">Let's connect professionally</p>
+                  <p className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Location</p>
+                  <p className="text-sm font-semibold text-gray-200 mt-0.5 tracking-wide flex items-center gap-1.5">
+                    Sri Lanka <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest bg-[#221a3a] px-1.5 py-0.5 rounded border border-purple-500/10">lk</span>
+                  </p>
                 </div>
               </div>
-              <span className="text-gray-600 group-hover:text-[#f43f5e] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 text-sm font-bold">↗</span>
-            </a>
 
-            {/* Email Card */}
-            <a 
-              href="mailto:your@email.com" 
-              className="flex items-center justify-between p-4 bg-[#131124]/40 border border-purple-500/10 rounded-2xl backdrop-blur-md group hover:border-pink-500/40 hover:shadow-[0_10px_30px_rgba(168,85,247,0.08)] shadow-[0_0_40px_-20px_rgba(168,85,247,0.15)] transition-all duration-300 ease-out transform hover:-translate-y-1"
-            >
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 bg-[#1d1225] rounded-xl border border-pink-500/10 flex items-center justify-center text-[#f43f5e] group-hover:border-pink-500/30 group-hover:shadow-[0_0_15px_rgba(244,63,94,0.2)] transition-all duration-300">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L22 8m-9+6h.01M21 16v-8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2z"/></svg>
+              {/* Availability Slot */}
+              <div className="flex items-center gap-4 p-3.5 bg-[#17142b]/50 border border-purple-500/5 rounded-2xl">
+                <div className="w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-white tracking-wide group-hover:text-pink-400 transition-colors duration-300">Email</h4>
-                  <p className="text-xs text-gray-500 mt-0.5">Send me a message</p>
+                  <p className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Availability</p>
+                  <p className="text-sm font-semibold text-gray-200 mt-0.5 tracking-wide flex items-center gap-1.5">
+                    Open for Internships <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]" />
+                  </p>
                 </div>
               </div>
-              <span className="text-gray-600 group-hover:text-[#f43f5e] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 text-sm font-bold">↗</span>
-            </a>
-
+            </div>
           </div>
+
+          {/* ================= CONNECT WITH ME GRID (IMAGE 3 STRUCTURE) ================= */}
+          <div className="bg-[#131124]/40 border border-purple-500/10 rounded-3xl p-6 backdrop-blur-md shadow-[0_0_40px_-20px_rgba(168,85,247,0.15)] text-left space-y-4">
+            <h3 className="text-xl font-bold text-white tracking-wide flex items-center gap-2 font-sans">
+              Connect With Me <span className="text-[#f43f5e] text-md">🤍</span>
+            </h3>
+
+            {/* Social Circle Links Block Row */}
+            <div className="flex items-center gap-3">
+              {/* GitHub Link Icon */}
+              <a 
+                href="https://github.com/rashhyyy" 
+                target="_blank" 
+                rel="noreferrer"
+                className="w-12 h-12 rounded-xl bg-[#17142b]/60 border border-purple-500/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-pink-500/30 hover:bg-[#201938] hover:shadow-[0_0_15px_rgba(244,63,94,0.15)] transition-all duration-300"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+
+              {/* LinkedIn Link Icon */}
+              <a 
+                href="https://www.linkedin.com/in/rashmi-nishadini-775009355/?skipRedirect=true" 
+                target="_blank" 
+                rel="noreferrer"
+                className="w-12 h-12 rounded-xl bg-[#17142b]/60 border border-purple-500/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-pink-500/30 hover:bg-[#201938] hover:shadow-[0_0_15px_rgba(244,63,94,0.15)] transition-all duration-300"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+
+              {/* Mail To Link Icon */}
+              <a 
+                href="mailto:rashminishadini2002@gmail.com" 
+                className="w-12 h-12 rounded-xl bg-[#17142b]/60 border border-purple-500/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-pink-500/30 hover:bg-[#201938] hover:shadow-[0_0_15px_rgba(244,63,94,0.15)] transition-all duration-300"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L22 8m-9+6h.01M21 16v-8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2z"/></svg>
+              </a>
+            </div>
+
+            <p className="text-gray-500 text-xs md:text-sm tracking-wide pt-2">
+              Let's create something amazing together! <span className="text-pink-400">✨</span>
+            </p>
+          </div>
+
+          {/* ================= SEEKING INTERNSHIP INTERACTIVE BANNER (IMAGE 1 DATA) ================= */}
+          <div className="bg-[#131124]/40 border border-purple-500/10 rounded-3xl p-6 backdrop-blur-md shadow-[0_0_40px_-20px_rgba(168,85,247,0.15)] space-y-3.5">
+            <h3 className="text-lg md:text-xl font-bold text-white tracking-wide flex items-center gap-2 font-sans">
+              <span className="text-pink-400 text-lg leading-none">✨</span> Seeking Internship
+            </h3>
+            
+            <p className="text-gray-400 text-sm leading-relaxed tracking-wide">
+              I'm actively looking for <span className="text-pink-400 font-semibold">software engineering internship opportunities</span> where I can contribute my skills and learn from experienced professionals. 🚀
+            </p>
+
+            <div className="flex items-center gap-2 text-xs font-bold text-pink-400 tracking-wide pt-1">
+              <span className="w-2 h-2 rounded-full bg-pink-500" /> Ready to start immediately
+            </div>
+          </div>
+
         </div>
 
       </div>
