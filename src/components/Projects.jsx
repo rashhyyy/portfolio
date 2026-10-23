@@ -1,33 +1,41 @@
 import React from 'react';
 import cafeFinderImg from '../assets/cafefinder.png';
 import coffeeshopImg from '../assets/coffeeshop.png';
+import touristAgentImg from '../assets/tourist_agent.png';
+import lawFirmImg from '../assets/lawfirm.png';
+import aurelleImg from '../assets/aurelle.png';
 
 export default function Projects() {
   const projectList = [
     {
-      title: "The Zestora – Coffee Shop Website",
-      description: " Developed a full-stack coffee shop website that allows customers to browse products, place orders, and explore menu items online. ",
-      tags: ["HTML","css","JS", "Node.js", "MySQL", ],
+      title: "Café Finder Mobile App",
+      description: "Designed and developed a mobile application that helps users discover nearby cafés through real-time café search, location tracking, and navigation functionalities.",
+      tags: ["React Native", "Node.js", "Express.js", "MongoDB", "Google Maps API"],
+      image: cafeFinderImg
+    },
+    {
+      title: "Tourist Agent Management System",
+      description: "Built a web application using HTML, CSS, JavaScript, Express.js, and MySQL. Implemented backend logic and database integration to support the system's functionality.",
+      tags: ["HTML", "CSS", "JavaScript", "Express.js", "MySQL"],
+      image: touristAgentImg
+    },
+    {
+      title: "Coffee Shop Management and Ordering System",
+      description: "Developed a full-stack coffee shop web application featuring product management, online ordering, and responsive user interfaces.",
+      tags: ["HTML", "CSS", "JavaScript", "Express.js", "MySQL"],
       image: coffeeshopImg
     },
     {
-      title: "Cafe Finder",
-      description: "A mobile app that helps users discover and explore nearby cafes with real-time ratings, menu browsing, and location-based recommendations.",
-      tags: ["React Native", "Firebase", "Google Maps API"],
-      image: cafeFinderImg
-    },
-    
-    {
-      title: "EduPath Lanka",
-      description: "An educational pathway platform connecting Sri Lankan students with higher education opportunities, scholarship information, and career guidance resources.",
-      tags: ["React", "Firebase", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+      title: "Law Firm Website",
+      description: "Developed a responsive, professional law firm website using React, Next.js, TypeScript, and Tailwind CSS. The website features attorney profiles, legal practice areas, service information, consultation inquiries, interactive navigation, and mobile-friendly interfaces. Implemented modern UI/UX design with reusable components, responsive layouts, and an accessible user experience.",
+      tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      image: lawFirmImg
     },
     {
-      title: "TravelPilot",
-      description: "A comprehensive travel planning web platform featuring a dynamic itinerary generator, custom routes, and destination discovery guides designed for exploring Sri Lanka.",
-      tags: ["Flutter", "Node.js", "Express.js"],
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=800"
+      title: "AURELLE Restaurant Management System",
+      description: "Developed a full-stack restaurant platform with online ordering, table and VIP room reservations, and real-time order tracking. Built the application using Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, with role-based staff dashboards.",
+      tags: ["Next.js", "React", "TypeScript", "Node.js", "Express.js", "MongoDB"],
+      image: aurelleImg
     }
   ];
 
