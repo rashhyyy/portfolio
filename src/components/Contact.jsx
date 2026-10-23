@@ -59,7 +59,7 @@ export default function Contact() {
       {/* ============================================================================= */}
 
       {/* Section Header Block */}
-      <div className="space-y-3 mb-16 text-center relative z-10">
+      <div className="reveal-on-scroll space-y-3 mb-16 text-center relative z-10">
         <h4 className="text-xs font-bold tracking-widest text-[#f43f5e] uppercase">
           Get In Touch
         </h4>
@@ -75,7 +75,7 @@ export default function Contact() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto w-full text-left items-start relative z-10">
         
         {/* Left Column: Input Form Fields Block Container */}
-        <form className="lg:col-span-7 space-y-5 w-full" onSubmit={handleSubmit}>
+        <form className="reveal-left lg:col-span-7 space-y-5 w-full" onSubmit={handleSubmit}>
           <div className="space-y-2">
             <label className="text-xs font-bold uppercase tracking-wider text-gray-400">Name</label>
             <input 
@@ -135,7 +135,7 @@ export default function Contact() {
         </form>
 
         {/* Right Column: Dynamic Info Stacks (Image 2 -> Image 3 Layout -> Image 1 Layout) */}
-        <div className="lg:col-span-5 space-y-6 w-full lg:pt-2">
+        <div className="reveal-right lg:col-span-5 space-y-6 w-full lg:pt-2">
           
           {/* ================= IMAGE 2 METRICS: CONTACT INFORMATION CONTAINER ================= */}
           <div className="bg-[#131124]/40 border border-purple-500/10 rounded-3xl p-6 backdrop-blur-md shadow-[0_0_40px_-20px_rgba(168,85,247,0.15)] space-y-4">

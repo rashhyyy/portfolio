@@ -80,7 +80,7 @@ export default function Skills() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#221e36_1px,transparent_1px),linear-gradient(to_bottom,#221e36_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_75%_65%_at_50%_50%,#000_70%,transparent_100%)] opacity-30 pointer-events-none -z-10" />
       {/* ============================================================================= */}
 
-      <div className="space-y-4 mb-16 relative z-10">
+      <div className="reveal-on-scroll space-y-4 mb-16 relative z-10">
         <h4 className="text-xs font-bold tracking-widest text-pink-500 uppercase">
           Skills
         </h4>
@@ -97,7 +97,8 @@ export default function Skills() {
         {skillCategories.map((category, index) => (
           <div 
             key={index} 
-            className="bg-[#131124]/40 border border-purple-500/10 rounded-3xl p-6 backdrop-blur-md transition-all duration-300 ease-out transform hover:-translate-y-2 hover:border-pink-500/40 hover:shadow-[0_10px_40px_rgba(236,72,153,0.08)] shadow-[0_0_50px_-20px_rgba(168,85,247,0.15)] group"
+            style={{ transitionDelay: `${index * 80}ms` }}
+            className="reveal-on-scroll bg-[#131124]/40 border border-purple-500/10 rounded-3xl p-6 backdrop-blur-md transition-all duration-300 ease-out transform hover:-translate-y-2 hover:border-pink-500/40 hover:shadow-[0_10px_40px_rgba(236,72,153,0.08)] shadow-[0_0_50px_-20px_rgba(168,85,247,0.15)] group"
           >
             {/* Header Content containing Tag Icon + Category Title */}
             <div className="flex items-center space-x-3 mb-6">

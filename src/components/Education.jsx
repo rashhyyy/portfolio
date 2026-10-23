@@ -20,7 +20,7 @@ export default function Education() {
       {/* ============================================================================= */}
 
       {/* Title Header Block */}
-      <div className="space-y-3 mb-16 relative z-10">
+      <div className="reveal-on-scroll space-y-3 mb-16 relative z-10">
         <h4 className="text-xs font-bold tracking-widest text-[#f43f5e] uppercase">
           Education
         </h4>
@@ -41,7 +41,7 @@ export default function Education() {
         </div>
 
         {/* Major Degree Info Card Asset Box */}
-        <div className="bg-[#131124]/40 border border-purple-500/20 rounded-3xl p-6 md:p-8 backdrop-blur-md relative transition-all duration-300 ease-out transform hover:-translate-y-1 hover:border-pink-500/40 hover:shadow-[0_15px_40px_rgba(236,72,153,0.1)] shadow-[0_0_50px_-15px_rgba(168,85,247,0.15)] group">
+        <div className="reveal-on-scroll bg-[#131124]/40 border border-purple-500/20 rounded-3xl p-6 md:p-8 backdrop-blur-md relative transition-all duration-300 ease-out transform hover:-translate-y-1 hover:border-pink-500/40 hover:shadow-[0_15px_40px_rgba(236,72,153,0.1)] shadow-[0_0_50px_-15px_rgba(168,85,247,0.15)] group">
           
           {/* Degree Header Row */}
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">

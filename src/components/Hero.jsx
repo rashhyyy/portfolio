@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full z-10 py-12">
         
         {/* Left Content Column */}
-        <div className="lg:col-span-7 space-y-6">
+        <div className="reveal-left lg:col-span-7 space-y-6">
           <h4 className="text-xs font-bold tracking-widest text-pink-500 uppercase">
             Hi, I'm
           </h4>
@@ -56,7 +56,7 @@ export default function Hero() {
         </div>
 
         {/* Right Graphic Column */}
-        <div className="lg:col-span-5 relative flex justify-center items-center mt-16 lg:mt-0 h-[480px]">
+        <div className="reveal-right lg:col-span-5 relative flex justify-center items-center mt-16 lg:mt-0 h-[480px]">
           
           {/* Main Neon Circular Frame */}
           <div className="relative w-76 h-76 md:w-85 md:h-85 rounded-full border border-pink-500/20 p-2 flex items-center justify-center bg-gradient-to-b from-purple-950/20 to-transparent shadow-[0_0_50px_rgba(236,72,153,0.08)] z-10">

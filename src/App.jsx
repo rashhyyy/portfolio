@@ -9,10 +9,14 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollObserver from './components/ScrollObserver';
 
 function App() {
   return (
     <div className="min-h-screen bg-[#0d0b14] text-gray-300 antialiased selection:bg-pink-500 selection:text-white">
+      {/* Scroll indicator & back-to-top controller */}
+      <ScrollObserver />
+      
       {/* 1. Header Navigation Bar */}
       <Navbar />
       

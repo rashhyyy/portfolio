@@ -58,7 +58,7 @@ export default function Projects() {
       {/* ============================================================================= */}
 
       {/* Section Header Block matching layout exact structure */}
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-4 relative z-10">
+      <div className="reveal-on-scroll flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-4 relative z-10">
         <div className="text-left space-y-2">
           <h4 className="text-xs font-bold tracking-widest text-[#f43f5e] uppercase">
             Projects
@@ -77,7 +77,8 @@ export default function Projects() {
         {projectList.map((project, index) => (
           <div 
             key={index} 
-            className="bg-[#131124]/40 border border-purple-500/10 rounded-3xl overflow-hidden flex flex-col h-full backdrop-blur-md transition-all duration-300 ease-out transform hover:-translate-y-2 hover:border-pink-500/40 hover:shadow-[0_15px_40px_rgba(236,72,153,0.08)] shadow-[0_0_50px_-20px_rgba(168,85,247,0.15)] group"
+            style={{ transitionDelay: `${index * 100}ms` }}
+            className="reveal-on-scroll bg-[#131124]/40 border border-purple-500/10 rounded-3xl overflow-hidden flex flex-col h-full backdrop-blur-md transition-all duration-300 ease-out transform hover:-translate-y-2 hover:border-pink-500/40 hover:shadow-[0_15px_40px_rgba(236,72,153,0.08)] shadow-[0_0_50px_-20px_rgba(168,85,247,0.15)] group"
           >
             {/* Made image section slightly smaller with aspect-video */}
             <div className="relative aspect-video w-full overflow-hidden bg-purple-950/20">

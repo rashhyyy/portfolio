@@ -29,7 +29,7 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start w-full relative z-10">
         
         {/* Left Text Content Column */}
-        <div className="lg:col-span-7 space-y-6">
+        <div className="reveal-left lg:col-span-7 space-y-6">
           <h4 className="text-xs font-bold tracking-widest text-pink-500 uppercase">
             About Me
           </h4>
@@ -63,7 +63,7 @@ export default function About() {
 
         {/* Right Info Cards Grid Column */}
         {/* Enhanced with an integrated outer purple glow shadow to match background richness */}
-        <div className="lg:col-span-5 w-full bg-[#131124]/40 border border-purple-500/20 rounded-3xl p-8 backdrop-blur-md mt-8 lg:mt-4 shadow-[0_0_60px_-15px_rgba(168,85,247,0.3)]">
+        <div className="reveal-right lg:col-span-5 w-full bg-[#131124]/40 border border-purple-500/20 rounded-3xl p-8 backdrop-blur-md mt-8 lg:mt-4 shadow-[0_0_60px_-15px_rgba(168,85,247,0.3)]">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             
             {/* Card 1: University */}
