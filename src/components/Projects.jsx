@@ -4,6 +4,7 @@ import coffeeshopImg from '../assets/coffeeshop.png';
 import touristAgentImg from '../assets/tourist_agent.png';
 import lawFirmImg from '../assets/lawfirm.png';
 import aurelleImg from '../assets/aurelle.png';
+import smartShoppingImg from '../assets/smart_shopping.png';
 
 export default function Projects() {
   const projectList = [
@@ -36,6 +37,12 @@ export default function Projects() {
       description: "Developed a full-stack restaurant platform with online ordering, table and VIP room reservations, and real-time order tracking. Built the application using Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, with role-based staff dashboards.",
       tags: ["Next.js", "React", "TypeScript", "Node.js", "Express.js", "MongoDB"],
       image: aurelleImg
+    },
+    {
+      title: "Smart Shopping Mobile App",
+      description: "Developed a mobile shopping application using React Native and Expo for the frontend, with Node.js, Express.js, and MongoDB for the backend and database. Features include shopping list management, voice input, and product and price management.",
+      tags: ["React Native", "Expo", "Node.js", "Express.js", "MongoDB"],
+      image: smartShoppingImg
     }
   ];
 

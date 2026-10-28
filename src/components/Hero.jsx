@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 pt-4">
             {/* Download CV Link Trigger */}
             <a 
-              href="/Resume.pdf"
+              href="/Rashmi_Nishadini_Software_Engineering_Intern_CV.pdf"
               download="Rashmi_Nishadini_Software_Engineering_Intern_CV.pdf"
               className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-medium rounded-full hover:opacity-90 transition shadow-lg shadow-pink-500/20 text-sm cursor-pointer"
             >
